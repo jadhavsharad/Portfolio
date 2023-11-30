@@ -1,6 +1,6 @@
 import React from 'react'
 import SectionHeading from '../utils/SectionHeading'
-import GridLines from 'react-gridlines';
+import GridLines from 'react-gridlines'
 import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
 
 const Contact = () => {
