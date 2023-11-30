@@ -1,6 +1,6 @@
 {
-  "name": "vite-project",
-  "private": true,
+  "name": "portfolio",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -20,6 +20,7 @@
     "react-fancytext": "^1.0.3",
     "react-gridlines": "^1.1.7",
     "react-locomotive-scroll": "^0.2.2",
+    "react-parallax-mouse": "^2.1.0",
     "react-scroll-parallax": "^3.4.5",
     "react-text-transition": "^3.1.0",
     "react-type-animation": "^3.2.0",
