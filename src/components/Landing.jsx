@@ -21,7 +21,7 @@ function Landing() {
       <AnimatedCursor innerSize={8}
         outerSize={35}
         innerScale={1}
-        outerScale={2}
+        outerScale={1.25}
         outerAlpha={0}
         hasBlendMode={true}
         innerStyle={{

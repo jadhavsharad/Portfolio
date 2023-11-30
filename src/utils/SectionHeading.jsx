@@ -4,7 +4,7 @@ import { Parallax } from 'react-scroll-parallax';
 const SectionHeading = ({Heading}) => {
     return (
         <div>
-            <div className='flex overflow-hidden py-24'>
+            <div className='flex overflow-hidden py-24 font-Montserrat'>
                 <Parallax translateX={[-60, 0]}>
                     <div className='uppercase text-border text-8xl font-extrabold'>{Heading}</div>
                 </Parallax>
