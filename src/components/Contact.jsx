@@ -1,13 +1,12 @@
 import React from 'react'
 import SectionHeading from '../utils/SectionHeading'
-import GridLines from 'react-gridlines'
-import MouseParallaxContainer from 'react-parallax-mouse'
-import MouseParallaxChild from 'react-parallax-mouse'
+import GridLines from 'react-gridlines';
+import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
 
 const Contact = () => {
     return (
         <div>
-            <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
+            <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1} r>
                 <SectionHeading Heading={"Contact"} />
                 <div className='p-16'>
 
