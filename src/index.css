@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  --cursor-color: #fff
+}
+
+html.dark-mode {
+  --cursor-color: #fff
+}
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+#root{
+  max-width: 1536px;
+  width: 100%;
+  margin: auto;
+  scrollbar-width: 0;
+
+}
+
+
+body {
+  background-color: black;
+  margin: 0;
+  /* display: flex;
+  justify-content: center;
+  place-items: center; */
+  /* min-width: 320px; */
+  min-height: 100vh;
+}
+
+.text-border {
+  text-shadow: 0.5px 0 #fff, -0.5px 0 #fff, 0 0.5px #fff, 0 -0.5px #fff,
+    0.5px 0.5px #fff, -0.5px -0.5px #fff, 0.5px -0.5px #fff, -0.5px 0.5px #fff;
+}
+
+a {
+  padding: 10px;
+  z-index: 10;
+  position: relative;
+}
+
+a::before {
+  /* background: none repeat scroll 0 0 transparent; */
+  content: "";
+  display: block;
+  height: 0%;
+  bottom: 50%;
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  z-index: -10;
+  transition: all 0.28s ease-in-out;
+
+}
+
+
+a:hover::before {
+  bottom: 0;
+  height: 100%;
+}
+
+a:hover {
+  color: rgb(161 161 170);
+}
+
+.email-id{
+  z-index: 10;
+  position: relative;
+}
+.email-id::before{
+content: "";
+position: absolute;
+display: block;
+background: #fff;
+width: 0%;
+height: 3px;
+border-radius: 100px;
+bottom: 0;
+left: 50%;
+transition: all 0.3s ease-in-out;
+mix-blend-mode: difference;
+}
+
+.email-id:hover::before{
+width: 100%;
+left: 0;
+}
+
+
+
