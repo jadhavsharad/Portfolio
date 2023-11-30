@@ -13,7 +13,7 @@ const Contact = () => {
                     <GridLines cellWidth={259} cellHeight={75} stroke={0.5} lineColor={"#222"} className="h-96 relative flex items-center justify-center">
 
                         {/* Background */}
-                        <MouseParallaxChild factorX={-2} factorY={-2} className='h-48 w-48 bg-white rounded-full absolute blur-[80px] opacity-50'></MouseParallaxChild>
+                        <MouseParallaxChild factorX={-2} factorY={-2} className='h-48 w-48 bg-white rounded-full absolute blur-[100px] opacity-50'></MouseParallaxChild>
 
 
                         {/* Right */}
