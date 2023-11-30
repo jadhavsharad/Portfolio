@@ -6,7 +6,7 @@ import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse
 const Contact = () => {
     return (
         <div>
-            <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1} r>
+            <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
                 <SectionHeading Heading={"Contact"} />
                 <div className='p-16'>
 
