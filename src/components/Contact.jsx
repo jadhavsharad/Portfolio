@@ -30,7 +30,7 @@ const Contact = () => {
                     </GridLines>
                 </div>
             </MouseParallaxContainer>
-            <h1 className='text-xl text-white'> Website Under Development</h1>
+            <h1 className='text-xl text-white mx-auto'> Website Under Development</h1>
         </div>
     )
 }
