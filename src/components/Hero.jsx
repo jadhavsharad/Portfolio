@@ -16,7 +16,7 @@ const Hero = () => {
             <div className="bg-gradient-to-tr from-red-400 to-fuchsia-500 bg-clip-text text-transparent">
               /<TypeAnimation sequence={['Software', 2000, 'Developer', 2000,]} speed={20} wrapper="span" cursor={false} repeat={Infinity} />
             </div>
-            <div className="">&gt;</div>
+            <div>&gt;</div>
           </Parallax>
         </GridLines>
       </div>
