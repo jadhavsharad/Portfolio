@@ -6,10 +6,6 @@ import Contact from './Contact'
 import AnimatedCursor from "react-animated-cursor"
 
 
-
-
-
-
 function Landing() {
   return (
     <>
