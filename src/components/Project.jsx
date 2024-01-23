@@ -9,7 +9,6 @@ import ProjectDiscriptionBG from '../utils/ProjectDiscriptionBG';
 import ProjectDiscription from '../utils/ProjectDiscription';
 
 
-
 const Project = () => {
 
     return (
