@@ -9,7 +9,6 @@ import AnimatedCursor from "react-animated-cursor"
 function Landing() {
   return (
     <>
-
       <NavigationBar />
       <Hero />
       <Project />
