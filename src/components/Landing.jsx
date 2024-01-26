@@ -11,10 +11,11 @@ import { Loader } from './Loader'
 function Landing() {
 
   const containerRef = useRef(null)
+  const [loading, setLoading] = useState(true);
+  
   var { scroll } = useLocomotiveScroll({
     smooth: true
   })
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -22,6 +23,7 @@ function Landing() {
     }, 12000);
     return () => clearTimeout(timer);
   }, []);
+
 
   if (loading) {
     return (

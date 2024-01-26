@@ -21,7 +21,6 @@ const Accordion = () => {
                     onComplete: () => setOpenAccordion(null),
                 }
             );
-            // console.log(openAccordion);
         } else {
             if (openAccordion !== null) {
                 gsap.to(
