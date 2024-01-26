@@ -1,22 +1,19 @@
 import React from 'react'
 import { Parallax } from 'react-scroll-parallax';
+import Marquee from "react-fast-marquee";
 
-const SectionHeading = ({Heading}) => {
+const SectionHeading = ({ Heading }) => {
     return (
         <div>
-            <div className='flex overflow-hidden py-24 font-Montserrat'>
-                <Parallax translateX={[-60, 0]}>
-                    <div className='uppercase text-border text-8xl font-extrabold'>{Heading}</div>
-                </Parallax>
-                <Parallax translateX={[-60, 0]}>
-                    <div className='uppercase text-white text-8xl font-extrabold'>{Heading}</div>
-                </Parallax>
-                <Parallax translateX={[-60, 0]}>
-                    <div className='uppercase text-8xl font-extrabold text-border'>{Heading}</div>
-                </Parallax>
-                <Parallax translateX={[-60, 0]}>
-                    <div className='uppercase text-white text-8xl font-extrabold'>{Heading}</div>
-                </Parallax>
+            <div className='my-48 select-none'>
+                <Marquee className='font-MontrealBold overflow-hidden' autoFill={true} pauseOnHover play={true}>
+                    <Parallax translateX={[-60, 0]} className='w-full'>
+                        <h1 className='uppercase text-[#f5f0ec] text-9xl px-4'>{Heading}</h1>
+                    </Parallax>
+                    <Parallax translateX={[-60, 0]} className='w-full'>
+                        <h1 className='uppercase text-border text-[#090909] text-9xl px-4'>{Heading}</h1>
+                    </Parallax>
+                </Marquee>
             </div>
         </div>
     )
