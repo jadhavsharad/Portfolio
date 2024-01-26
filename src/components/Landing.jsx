@@ -18,11 +18,10 @@ function Landing() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLoading(false); // Simulating the end of loading after a delay
-    }, 12000); // Adjust the delay time as needed
-    return () => clearTimeout(timer); // Cleanup function
+      setLoading(false);
+    }, 12000);
+    return () => clearTimeout(timer);
   }, []);
-
 
   if (loading) {
     return (

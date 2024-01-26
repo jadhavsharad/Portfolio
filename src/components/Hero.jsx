@@ -3,8 +3,6 @@ import { Parallax } from 'react-scroll-parallax';
 import { TypeAnimation } from 'react-type-animation';
 import GridLines from 'react-gridlines';
 
-
-
 const Hero = () => {
   const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   const time = new Date().getHours().toLocaleString('en-US', {
@@ -20,6 +18,8 @@ const Hero = () => {
     minute: 'numeric',
     second: 'numeric'
   }).padStart(2, "0");
+
+
   return (
     <>
       <div className='text-[#fdf5eb] h-screen '>
@@ -34,7 +34,7 @@ const Hero = () => {
           <div>
             <div className='flex flex-col text-center font-Montserrat uppercase absolute bottom-12 left-12 text-xl'>
               <small>Based in India</small>
-              <small>{time + " " + "IST" +' '+ days[new Date().getDay()]}</small>
+              <small>{time + " " + "IST" + ' ' + days[new Date().getDay()]}</small>
             </div>
             <small className='text-[#888] mx-auto font-WorkSans tracking-tighter font-light duration-300 text-xl absolute bottom-24 animate-bounce'>scroll</small>
           </div>

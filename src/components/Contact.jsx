@@ -4,6 +4,8 @@ import GridLines from 'react-gridlines';
 import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
 
 const Contact = () => {
+
+    
     return (
         <div>
             <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
