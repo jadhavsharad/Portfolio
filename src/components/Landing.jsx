@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import NavigationBar from './NavigationBar'
 import Hero from './Hero'
 import Project from './Project'
