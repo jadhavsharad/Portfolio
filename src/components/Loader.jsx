@@ -25,6 +25,7 @@ export const Loader = () => {
                 <div className='bg-[#222] h-32 bottom-0 absolute left-0 duration-1000' style={{ width: `${progress + '%'}` }}></div>
                 <div className='bg-none h-32 bottom-0 absolute border-[3px] border-[#222] w-full'></div>
                 <p className='xl:text-9xl lg:text7xl text-[#222] font-MontrealBold'>{progress}%</p>
+                <p className='absolute bottom-36 font-bold font-RedHatDisplay text-[#222]'>BEST VIEWED ON DESKTOPS (CHROME, FIREFOX), PHONE AND TAB's ARE NOT RECOMMENDED</p>
             </div>
         </div>
     )
