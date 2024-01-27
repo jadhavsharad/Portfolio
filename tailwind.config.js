@@ -24,7 +24,10 @@ export default {
         MontrealMedium: ['PP Neue Montreal Medium'],
         WorkSans: ['Work Sans'],
         Raleway:['Raleway'],
-        Figtree:['Figtree']
+        Figtree:['Figtree'],
+        RedHatDisplay:['Red Hat Display'],
+        Coda:['Coda'],
+        Oxanium:['Oxanium']
       },
       animation: {
         'spin-slow': 'spin 2s linear infinite',
