@@ -23,8 +23,6 @@
     "react-dom": "^18.2.0",
     "react-fancytext": "^1.0.3",
     "react-fast-marquee": "^1.6.3",
-    "react-glitch-animation": "^1.0.0",
-    "react-glitch-effect": "^3.1.0",
     "react-gridlines": "^1.1.7",
     "react-icons": "^5.0.1",
     "react-locomotive-scroll": "^0.2.2",
