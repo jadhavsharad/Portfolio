@@ -6,6 +6,8 @@ import html from '../assets/html.svg'
 import css from '../assets/css.svg'
 import javascript from '../assets/javascript.svg'
 import tailwind from '../assets/tailwind.svg'
+import typescript from '../assets/typescript.svg'
+import react from '../assets/react.svg'
 
 const Accordion = () => {
     const [openAccordion, setOpenAccordion] = useState(null);
@@ -21,6 +23,7 @@ const Accordion = () => {
                     onComplete: () => setOpenAccordion(null),
                 }
             );
+            // console.log(openAccordion);
         } else {
             if (openAccordion !== null) {
                 gsap.to(
@@ -75,35 +78,55 @@ const Accordion = () => {
                             </div>
                         </div>
                         <div className='lg:w-1/2 w-full text-3xl z-10 px-8 font-Figtree text-[#666] flex flex-col justify-center'>
-                            <p>Developed a <span className='text-[#f5f0ec] font-semibold'>highly responsive with modern design,</span> Lazy Earning can help you earn online on <span className='text-[#f5f0ec] font-semibold'>any device, any platform.</span></p>
+                            <p>Developed a <span className='text-[#f5f0ec] font-semibold'>highly responsive with modern design frontend,</span> Lazy Earning can help you earn online on <span className='text-[#f5f0ec] font-semibold'>any device, any platform.</span></p>
                             <hr className='my-4 border-none' />
                             <h1 className='text-left font-medium'><span className='text-[#f5f0ec] font-semibold'>Technologies</span> used for developing</h1>
                             <hr className='my-1 border-none' />
                             <div className='flex gap-4'>
-                                <img src={html} className='max-w-28' alt="" />
-                                <img src={css} className='max-w-28' alt="" />
-                                <img src={javascript} className='max-w-28' alt="" />
-                                <img src={tailwind} className='max-w-28' alt="" />
+                                <img src={html} className='max-w-28' alt="" /><img src={css} className='max-w-28' alt="" /><img src={javascript} className='max-w-28' alt="" /><img src={tailwind} className='max-w-28' alt="" />
                             </div>
                             <hr className='my-4 border-none' />
-                            <h1>You can visit the project by, <a href="https://jadhavsharad.github.io/lazyearning/" className='underline underline-offset-2 text-[#f5f0ec]' target='https://jadhavsharad.github.io/lazyearning/'>clicking here</a></h1>
+                            <h1>You can visit the project by, <a href="https://jadhavsharad.github.io/lazyearning/" className=' text-[#f5f0ec]' target='https://jadhavsharad.github.io/lazyearning/'>clicking here</a></h1>
                         </div>
                     </div>
                 </div>
 
                 <div className={`accordion__item ${openAccordion === 1 ? 'pb-4' : 'pb-0'} ${openAccordion === 1 ? "open" : null}`} ref={(el) => (accordionRefs.current[1] = el)}>
                     <div className="accordion__title" onClick={() => handleAccordionClick(1)} >
-                        <h1 className='font-light tracking-tight'>Spotify Clone</h1>
+                        <h1 className='font-light tracking-tight'>Smart Home Management</h1>
                         <PiPlusLight className={`duration-500 ${openAccordion === 1 ? 'rotate-45' : 'rotate-0'}`} />
                     </div>
-                    <div className="accordion__details h-0 overflow-hidden px-4">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, facilis. Dolor ipsa soluta architecto blanditiis quae! Neque, ducimus? Tempora fugiat quod rem iste explicabo, velit est qui porro ipsa error!</p>
+                    <div className="accordion__details h-0 overflow-hidden px-4 md:flex-col lg:flex-row flex items-center justify-center">
+                        <div className="lg:w-1/2 w-full h-fit text-3xl z-10 px-8 font-Figtree text-[#666] flex flex-col justify-center">
+                            <p><span className='text-[#f5f0ec]'>Smart home management</span> project aims to provide an amazing <span className='text-[#f5f0ec]'>modern user interface</span> for controlling and monitoring your smart home devices <span className='text-[#f5f0ec]'>from anywhere on any device.</span></p>
+                            <hr className='my-4 border-none' />
+                            <h1>Technologies used</h1>
+                            <hr className='my-4 border-none' />
+                            <div className='flex gap-4'>
+                                <img src={html} alt="" /><img src={css} alt="" /><img src={tailwind} alt="" /><img src={typescript} alt="" /><img src={react} alt="" />
+                            </div>
+                            <hr className='my-4 border-none' />
+                            <h1>view the live page by, <a href="" className=' text-[#f5f0ec]'>clicking here</a></h1>
+                            <hr className='my-4 border-none' />
+                            <h1>visit the project on, <a href="https://github.com/jadhavsharad/Smart-Home-Interface" target='https://github.com/jadhavsharad/Smart-Home-Interface' className='text-[#f5f0ec]'>github</a></h1>
+                        </div>
+                        <div className="lg:w-1/2 w-full ">
+                            <div className="h-1/3 w-full flex gap-4 pb-2 p-4">
+                                <div className="bg-[#111] aspect-video w-1/3 rounded-lg border-[#333] border-[1.4px]"></div>
+                                <div className="bg-[#111] aspect-video w-2/3 rounded-lg  border-[#333] border-[1.4px]"></div>
+                            </div>
+                            <div className=' w-full flex gap-4 pt-2 p-4'>
+                                <div className='w-2/3 aspect-video bg-[#111] rounded-lg border-[1.4px] border-[#333]'></div>
+                                <div className='w-1/3 aspect-video bg-[#111] rounded-lg border-[1.4px] border-[#333]'></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
+
                 <div className={`accordion__item ${openAccordion === 2 ? 'pb-4' : 'pb-0'} ${openAccordion === 2 ? "open" : null}`} ref={(el) => (accordionRefs.current[2] = el)}>
                     <div className="accordion__title" onClick={() => handleAccordionClick(2)} >
-                        <h1 className='font-light tracking-tight'>Smart Home Web App</h1>
+                        <h1 className='font-light tracking-tight'>Spotify Clone</h1>
                         <PiPlusLight className={`duration-500 ${openAccordion === 2 ? 'rotate-45' : 'rotate-0'}`} />
                     </div>
                     <div className="accordion__details h-0 overflow-hidden px-4">

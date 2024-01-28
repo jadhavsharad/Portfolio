@@ -31,14 +31,16 @@ function Landing() {
         <Hero />
         <Project />
         <Contact />
-        <AnimatedCursor innerSize={8}
-          outerSize={35}
+        <AnimatedCursor
+          innerSize={0}
+          trailingSpeed={4}
+          outerSize={45}
           innerScale={1}
           outerScale={1.25}
           outerAlpha={0}
           hasBlendMode={true}
           innerStyle={{ mixBlendMode: 'difference', backgroundColor: 'var(--cursor-color)' }}
-          outerStyle={{ mixBlendMode: 'difference', border: '3px solid var(--cursor-color)' }} />
+          outerStyle={{ mixBlendMode: 'difference', border: '3px solid var(--cursor-color)', backgroundColor: 'var(--cursor-color)' }} />
       </>
     )
   }

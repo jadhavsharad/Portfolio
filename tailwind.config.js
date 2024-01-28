@@ -27,7 +27,10 @@ export default {
         Figtree:['Figtree'],
         RedHatDisplay:['Red Hat Display'],
         Coda:['Coda'],
-        Oxanium:['Oxanium']
+        Oxanium:['Oxanium'],
+        Audiowide:['Audiowide'],
+        Orbitron:['Orbitron'],
+        DECTM: ['DEC Terminal Modern']
       },
       animation: {
         'spin-slow': 'spin 2s linear infinite',

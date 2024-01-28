@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&family=Coda:wght@400;800&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Allura&family=Foldit:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Syncopate:wght@400;700&family=Syne:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Audiowide&family=Oxanium:wght@200;300;400;500;600;700;800&family=Coda:wght@400;800&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Allura&family=Foldit:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Syncopate:wght@400;700&family=Syne:wght@400;500;600;700;800&display=swap');
 
 
 @tailwind base;
@@ -154,6 +154,51 @@ body {
   color: #090909;
 }
 
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+  
+}
+
+@keyframes expand_one {
+  0%{
+    transform: translate(2px, -2px);
+  }
+  100%{
+    transform: translate(5px,-5px);
+  }
+  
+}
+
+@keyframes expand_two {
+  0%{
+    transform: translate(5px, -5px);
+  }
+  100%{
+    transform: translate(2px,-2px);
+  }
+  
+}
+
+.animate_expand_one{
+  animation: expand_one 1.4s linear 0s infinite alternate-reverse;
+
+}
+
+.animate_expand_two{
+  animation: expand_two 1.4s linear 0s infinite alternate-reverse;
+
+}
+
+.animate_rotate{
+  animation: rotate 10s linear 0s infinite;
+}
+
+
 
 @font-face {
   font-family: 'PP Neue Montreal Book';
@@ -202,7 +247,17 @@ body {
   src: local('PP Neue Montreal Thin'), url('ppneuemontreal-thin.woff') format('woff');
 }
 
+@font-face {
+  font-family: "DEC Terminal Modern";
+  src: url("https://db.onlinewebfonts.com/t/1e4c00e45e6c6e086f49383cc0020b1f.eot");
+  src: url("https://db.onlinewebfonts.com/t/1e4c00e45e6c6e086f49383cc0020b1f.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/1e4c00e45e6c6e086f49383cc0020b1f.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/1e4c00e45e6c6e086f49383cc0020b1f.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/1e4c00e45e6c6e086f49383cc0020b1f.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/1e4c00e45e6c6e086f49383cc0020b1f.svg#DEC Terminal Modern")format("svg");
+}
 
+/*! locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
 html.has-scroll-smooth {
   overflow: hidden;
 }
@@ -233,4 +288,60 @@ html.has-scroll-dragging {
   vertical-align: top;
   white-space: nowrap;
   height: 100%;
+}
+
+.c-scrollbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 11px;
+  height: 100%;
+  transform-origin: center right;
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0;
+}
+
+.c-scrollbar:hover {
+  transform: scaleX(1.45);
+}
+
+.c-scrollbar:hover,
+.has-scroll-scrolling .c-scrollbar,
+.has-scroll-dragging .c-scrollbar {
+  opacity: 1;
+}
+
+[data-scroll-direction="horizontal"] .c-scrollbar {
+  width: 100%;
+  height: 10px;
+  top: auto;
+  bottom: 0;
+  transform: scaleY(1);
+}
+
+[data-scroll-direction="horizontal"] .c-scrollbar:hover {
+  transform: scaleY(1.3);
+}
+
+.c-scrollbar_thumb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.5;
+  width: 7px;
+  border-radius: 10px;
+  margin: 2px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.has-scroll-dragging .c-scrollbar_thumb {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+[data-scroll-direction="horizontal"] .c-scrollbar_thumb {
+  right: auto;
+  bottom: 0;
 }
