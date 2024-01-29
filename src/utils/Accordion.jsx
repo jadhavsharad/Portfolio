@@ -8,6 +8,10 @@ import javascript from '../assets/javascript.svg'
 import tailwind from '../assets/tailwind.svg'
 import typescript from '../assets/typescript.svg'
 import react from '../assets/react.svg'
+import screen1 from '../screens/projectOnescreenOne.svg'
+import screen2 from '../screens/projectOnescreenTwo.svg'
+import screen3 from '../screens/projectOnescreenThree.svg'
+import screen4 from '../screens/projectOnescreenFour.svg'
 
 const Accordion = () => {
     const [openAccordion, setOpenAccordion] = useState(null);
@@ -60,20 +64,26 @@ const Accordion = () => {
                     <div className="accordion__details h-0 overflow-hidden px-4 flex md:flex-col lg:flex-row relative">
                         <div className='lg:w-1/2 w-full flex z-10 '>
                             <div className="w-1/3 h-full">
-                                <div className="w-full aspect-video p-2">
-                                    <div className='border-[1.4px] bg-[#111] border-[#333] w-full h-full rounded-lg'></div>
-                                </div>
                                 <div className="h-80 w-full p-2">
-                                    <div className='border-[1.4px] bg-[#111] border-[#333] w-full h-full rounded-lg'></div>
+                                    <div className='border-[1.4px] relative bg-[#090909] h-full border-none w-full flex items-center justify-center rounded-[28px]'>
+                                        <img src={screen4} className='w-96 mx-auto' alt="" />
+
+                                    </div>
                                 </div>
                             </div>
 
-                            <div className='w-3/4 flex flex-col justify-center'>
-                                <div className="w-full h-1/2 p-2">
-                                    <div className='border-[1.4px] bg-[#111] border-[#333] w-full h-full rounded-lg'></div>
+                            <div className='w-3/4 bg-noneflex flex-col justify-between'>
+                                <div className="w-full h-1/3">
+                                    <div className='border-[1.4px] bg-none border-none flex justify-center w-full rounded-lg'>
+                                        <img src={screen2} className='max-w-72 mx-auto' alt="" />
+
+                                    </div>
                                 </div>
-                                <div className="w-full h-1/2 p-2">
-                                    <div className='border-[1.4px] bg-[#111] border-[#333] w-full h-full rounded-lg'></div>
+                                <div className="w-full h-56 overflow-hidden p-2">
+                                    <div className='border-[1.8px]  border-none w-full flex items-start justify-start rounded-md'>
+                                        <img src={screen1} className=' h-64 rotate-90 mx-auto  ' alt="" />
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
