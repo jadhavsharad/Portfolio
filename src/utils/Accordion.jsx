@@ -10,7 +10,6 @@ import typescript from '../assets/typescript.svg'
 import react from '../assets/react.svg'
 import screen1 from '../screens/projectOnescreenOne.svg'
 import screen2 from '../screens/projectOnescreenTwo.svg'
-import screen3 from '../screens/projectOnescreenThree.svg'
 import screen4 from '../screens/projectOnescreenFour.svg'
 
 const Accordion = () => {
@@ -67,7 +66,6 @@ const Accordion = () => {
                                 <div className="h-80 w-full p-2">
                                     <div className='border-[1.4px] relative bg-[#090909] h-full border-none w-full flex items-center justify-center rounded-[28px]'>
                                         <img src={screen4} className='w-96 mx-auto' alt="" />
-
                                     </div>
                                 </div>
                             </div>
@@ -76,13 +74,11 @@ const Accordion = () => {
                                 <div className="w-full h-1/3">
                                     <div className='border-[1.4px] bg-none border-none flex justify-center w-full rounded-lg'>
                                         <img src={screen2} className='max-w-72 mx-auto' alt="" />
-
                                     </div>
                                 </div>
                                 <div className="w-full h-56 overflow-hidden p-2">
                                     <div className='border-[1.8px]  border-none w-full flex items-start justify-start rounded-md'>
                                         <img src={screen1} className=' h-64 rotate-90 mx-auto  ' alt="" />
-
                                     </div>
                                 </div>
                             </div>
