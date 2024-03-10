@@ -5,13 +5,13 @@ import Marquee from "react-fast-marquee";
 const SectionHeading = ({ Heading }) => {
     return (
         <div>
-            <div className='my-48 select-none'>
+            <div className='py-24 select-none'>
                 <Marquee className='font-MontrealBold overflow-hidden' autoFill={true} pauseOnHover play={true}>
                     <Parallax translateX={[-60, 0]} className='w-full'>
-                        <h1 className='uppercase text-[#f5f0ec] text-9xl px-4'>{Heading}</h1>
+                        <h1 className='uppercase text-[#f5f0ec] text-8xl px-4'>{Heading}</h1>
                     </Parallax>
                     <Parallax translateX={[-60, 0]} className='w-full'>
-                        <h1 className='uppercase text-border text-[#090909] text-9xl px-4'>{Heading}</h1>
+                        <h1 className='uppercase text-border text-[#090909] text-8xl px-4'>{Heading}</h1>
                     </Parallax>
                 </Marquee>
             </div>

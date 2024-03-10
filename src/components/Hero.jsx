@@ -30,8 +30,8 @@ const Hero = () => {
   return (
     <>
       <div data-scroll-container className='text-[#fdf5eb] h-screen overflow-hidden'>
-      <div className="w-full min-h-full bg-[#090909] bg-grid-[#222] relative flex flex-col items-center justify-center">
-          <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-inherit [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+      <div className="w-full min-h-full bg-[#090909] bg-dot-zinc-700 relative flex flex-col items-center justify-center">
+          <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-[#090909] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
           <Parallax scale={[2, 0.5]} opacity={[2, 0]} className='flex text-8xl font-Figtree lowercase font-semibold'>
             <div className="">&lt;</div>
             <div className="text-[#fdf5eb]">

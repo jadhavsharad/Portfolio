@@ -7,7 +7,7 @@ const NavigationBar = () => {
       <header className=' text-[#f5f0ec] flex items-center justify-between px-12 h-20 border-b-[2px] border-b-[#111]'>
 
         {/* Name */}
-        <h1 className='lg:text-4xl font-Inter font-semibold text-[#f5f0ec]'>Sharad Jadhav</h1>
+        <h1 className='lg:text-4xl font-WorkSans font-semibold text-[#f5f0ec]'>Sharad Jadhav</h1>
 
         {/* Navigation Links */}
         <nav className=''>

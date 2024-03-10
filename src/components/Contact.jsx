@@ -2,17 +2,21 @@ import React from 'react'
 import SectionHeading from '../utils/SectionHeading'
 import GridLines from 'react-gridlines';
 import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
+import '../utils/Locomotive.css'
+import LocomotiveScroll from 'locomotive-scroll'
+
+new LocomotiveScroll();
 
 const Contact = () => {
 
-    
-    return (
-        <div>
-            <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
-                <SectionHeading Heading={"Contact"} />
-                <div className='p-16'>
 
-                    <GridLines cellWidth={259} cellHeight={75} stroke={0.5} lineColor={"#222"} className="h-96 relative flex items-center justify-center">
+    return (
+        <div  data-scroll-container>
+            <MouseParallaxContainer data-scroll-section globalFactorX={0.1} globalFactorY={0.1}>
+                <SectionHeading data-scroll Heading={"Contact"} />
+                <div data-scroll className='p-16'>
+
+                    <GridLines data-scroll cellWidth={259} cellHeight={75} stroke={0.5} lineColor={"#222"} className="h-96 relative flex items-center justify-center">
 
                         {/* Background */}
                         <MouseParallaxChild factorX={-2} factorY={-2} className='h-48 w-48 bg-[#f5f0ec] rounded-full absolute blur-[100px] opacity-50'></MouseParallaxChild>
